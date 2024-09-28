@@ -1,0 +1,302 @@
+* {
+    margin: 0px;
+    padding: 0;
+    text-decoration: none;
+    text-transform: none;
+}
+
+header nav {
+    background-color: rgba(91, 151, 161, 0.5) !important;
+    backdrop-filter: blur(10px);
+}
+.navbar-toggler:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+header nav div a.navbar-brand {
+    background: linear-gradient(to left, #00aaff, #5234fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+header nav ul li a {
+    position: relative;
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none;
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(125, 163, 235);
+    transition: width 0.5s ease-in-out;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+header nav ul li a:hover {
+    color: rgb(91, 144, 243) !important;
+}
+
+/* Styles pour les buttons */
+button.btn-primary {
+    transition: all 0.3s ease; /* Animation de transformation */
+    background: rgb(0, 153, 255);
+    border-color: rgb(0, 153, 255);
+    text-align: center;
+}
+button.btn-primary:hover {
+    transform: scale(1.1); /* Agrandissement au survol */
+    background: rgb(0, 153, 255);
+    border-color: rgb(0, 153, 255);
+    box-shadow: 0px 0px 10px 6px rgba(0, 123, 255, 0.395);
+    text-align: center;
+}
+
+
+main {
+    background: linear-gradient(270deg, #e9dbff, #fffefd, #d7f4ff);
+    background-size: 600% 600%;
+    animation: gradientAnimation 10s ease infinite;
+    min-height: 100vh; /* Assurez-vous que le main prend toute la hauteur de la fenêtre */
+    margin: 0; /* Supprimez les marges par défaut */
+    padding: 20px; /* Ajoutez un peu de padding pour le contenu */
+}
+section#section1 h1 {
+    background: linear-gradient(to right, #00aaff, #5234fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 50px !important;
+}
+@media screen and (max-width: 1200px) {
+    section#section1 h1 {
+    font-size: 40px !important;
+    }
+}
+@media screen and (max-width: 993px) {
+    section#section1 h1 {
+    font-size: 35px !important;
+    }
+}
+@media screen and (max-width: 510px) {
+    section#section1 p {
+    font-size: 30px !important;
+    }
+}
+
+
+section#section1 p {
+    font-size: 25px !important;
+    color: #333;
+}
+section#section1 button.btn-primary {
+    transition: all 0.3s ease; /* Animation de transformation */
+    background: rgb(0, 153, 255);
+    border-color: rgb(0, 153, 255);
+    text-align: center;
+}
+section#section1 button.btn-primary:hover {
+    transform: scale(1.1); /* Agrandissement au survol */
+    background: rgb(0, 153, 255);
+    border-color: rgb(0, 153, 255);
+    box-shadow: 0px 0px 10px 6px rgba(0, 123, 255, 0.395);
+    text-align: center;
+    transition: all 0.3s ease; /* Animation de transformation */
+}
+
+
+
+
+
+
+
+/* Styles pour les cartes */
+.card {
+    background-color: #c5000000 !important; /* Couleur de fond blanche */
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    padding: 20px; /* Espacement interne */
+    text-align: center; /* Centrer le texte */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition pour l'animation */
+    transition: 0.3 !important;
+    border: none !important;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    box-shadow: 0 8px 30px rgba(0, 123, 255, 0.466); /* Ombre plus prononcée au survol */
+    background-color: rgb(61, 161, 227) !important; /* Fond bleu ciel */
+    transition: 0.3s !important;
+}
+
+.card h1 {
+    font-size: 1.5rem; /* Taille de la police pour le titre */
+    margin-bottom: 10px; /* Espacement en bas du titre */
+}
+
+.card:hover h1 {
+    color: rgb(250, 240, 240) !important;
+}
+
+.card p {
+    font-size: 1rem; /* Taille de la police pour le texte */
+    color: #333; /* Couleur du texte */
+}
+
+.card:hover p {
+    color: #ffffff;
+}
+
+/* Styles pour les icônes */
+.card i {
+    font-size: 3rem; /* Taille de l'icône */
+    color: #007bff; /* Couleur de l'icône */
+    margin-bottom: 15px; /* Espacement en bas de l'icône */
+}
+
+.card:hover i {
+    color: #ffffff;
+}
+
+
+
+
+section#apropos div h1 {
+    background: linear-gradient(to left, #00aaff, #5234fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+section#apropos div.trait {
+    width: 70px !important;
+    height: 3px !important;
+    background-color: #007bff;
+}
+
+
+section#portfolio{
+    
+}
+
+section#portfolio h1 {
+    background: linear-gradient(to left, #00aaff, #007bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+section#portfolio div.trait {
+    width: 80px !important;
+    height: 3px !important;
+    background-color: #007bff;
+}
+
+
+section#portfolio .portfolio-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+section#portfolio .portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+section#portfolio .card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+section#portfolio .card-img-overlay {
+    opacity: 0;
+    background-color: rgba(0,0,0,0.7);
+    transition: opacity 0.3s ease;
+}
+
+section#portfolio .portfolio-card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+section#portfolio .card-img-overlay button {
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+section#portfolio .portfolio-card:hover .card-img-overlay button {
+    transform: translateY(0);
+}
+
+section#portfolio .portfolio-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+section#portfolio .portfolio-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section#portfolio .nav-link {
+    transition: all 0.3s ease;
+}
+
+section#portfolio.nav-link:hover {
+    transform: translateY(-2px);
+}
+
+section#portfolio.nav-link.active {
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+
+section#portfolio .filter-container {
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+section#portfolio .filter-wrapper {
+    min-width: max-content;
+}
+
+section#portfolio .filter-btn {
+    background: none;
+    border: 3px #007bff solid;
+    padding: 8px 16px;
+    margin: 0 4px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section#portfolio .filter-btn:hover {
+    background-color: #007bff;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+section#portfolio .filter-btn.active {
+    background-color: #007bff;
+    color: white;
+}
+
+
+

@@ -1,0 +1,172 @@
+/* Styles pour les cartes */
+.card {
+    background-color: #c5000000 !important; /* Couleur de fond blanche */
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    padding: 20px; /* Espacement interne */
+    text-align: center; /* Centrer le texte */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition pour l'animation */
+    transition: 0.3 !important;
+    border: none !important;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    box-shadow: 0 8px 30px rgba(0, 123, 255, 0.466); /* Ombre plus prononcée au survol */
+    background-color: rgb(61, 161, 227) !important; /* Fond bleu ciel */
+    transition: 0.3s !important;
+}
+
+.card h1 {
+    font-size: 1.5rem; /* Taille de la police pour le titre */
+    margin-bottom: 10px; /* Espacement en bas du titre */
+}
+
+.card:hover h1 {
+    color: rgb(250, 240, 240) !important;
+}
+
+.card p {
+    font-size: 1rem; /* Taille de la police pour le texte */
+    color: #333; /* Couleur du texte */
+}
+
+.card:hover p {
+    color: #ffffff;
+}
+
+/* Styles pour les icônes */
+.card i {
+    font-size: 3rem; /* Taille de l'icône */
+    color: #007bff; /* Couleur de l'icône */
+    margin-bottom: 15px; /* Espacement en bas de l'icône */
+}
+
+.card:hover i {
+    color: #ffffff;
+}
+
+
+/* Styles pour les buttons */
+button.btn-primary {
+    transition: all 0.3s ease; /* Animation de transformation */
+    background: rgb(0, 153, 255);
+    border-color: rgb(0, 153, 255);
+    text-align: center;
+}
+button.btn-primary:hover {
+    transform: scale(1.1); /* Agrandissement au survol */
+    background: rgb(0, 153, 255);
+    border-color: rgb(0, 153, 255);
+    box-shadow: 0px 0px 10px 6px rgba(0, 123, 255, 0.395);
+    text-align: center;
+}
+
+
+/* Styles pour la session portfolio */
+section#portfolio h1 {
+    background: linear-gradient(to left, #00aaff, #007bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+section#portfolio div.trait {
+    width: 80px !important;
+    height: 3px !important;
+    background-color: #007bff;
+}
+
+
+section#portfolio .portfolio-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+section#portfolio .portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+section#portfolio .card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+section#portfolio .card-img-overlay {
+    opacity: 0;
+    background-color: rgba(0,0,0,0.7);
+    transition: opacity 0.3s ease;
+}
+
+section#portfolio .portfolio-card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+section#portfolio .card-img-overlay button {
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+section#portfolio .portfolio-card:hover .card-img-overlay button {
+    transform: translateY(0);
+}
+
+section#portfolio .portfolio-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+section#portfolio .portfolio-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section#portfolio .nav-link {
+    transition: all 0.3s ease;
+}
+
+section#portfolio.nav-link:hover {
+    transform: translateY(-2px);
+}
+
+section#portfolio.nav-link.active {
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+
+section#portfolio .filter-container {
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+section#portfolio .filter-wrapper {
+    min-width: max-content;
+}
+
+section#portfolio .filter-btn {
+    background: none;
+    border: 3px #007bff solid;
+    padding: 8px 16px;
+    margin: 0 4px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section#portfolio .filter-btn:hover {
+    background-color: #007bff;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+section#portfolio .filter-btn.active {
+    background-color: #007bff;
+    color: white;
+}
