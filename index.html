@@ -6,8 +6,14 @@
     <title>WebVision</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+<!-- 
+git add .
+git commit -m "Description de la mise à jour"
+git push 
+-->
 <body>
     <header>
         <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-lg">
@@ -196,21 +202,24 @@
 <br>
 <br>
 <br>
+<img src="img/webvideos.mp4" alt="">
+<a href="img/webimg.jpg" target="_blank"></a>
+Au niveau du filtrage Portfolio, je veux que chaque porfolioitems ait un lien specifique pour que chaque portfolioitems ait un lien specifique lorsqu'on clique sur voir le projet
 
     </main>
 <script>
 
 document.addEventListener('DOMContentLoaded', function() {
     const portfolioItems = [ 
-        { image: 'img/webimg.jpg', category: 'Développement Web', title: 'Canva Schedule' },
-        { image: 'img/webimg.jpg', category: 'Conceptions', title: 'Electro bike' },
-        { image: 'img/webimg.jpg', category: 'Montages', title: 'Larq' },
-        { image: 'img/webimg.jpg', category: 'Développement Web', title: 'Zibbet' },
-        { image: 'img/webimg.jpg', category: 'Développement Web', title: 'Adobe Ai' },
-        { image: 'img/webimg.jpg', category: 'Conceptions', title: 'Goby' },
-        { image: 'img/webimg.jpg', category: 'Conceptions', title: 'OK' },
-        { image: 'img/webimg.jpg', category: 'Montages', title: 'Flaunter' },
-        { image: 'img/webimg.jpg', category: 'Montages', title: 'Inside weather' }
+        { image: 'img/webimg.jpg', category: 'Développement Web', title: 'Canva Schedule', contenu: { type: 'lien', url: 'https://otinelio.github.io/OtinelioPortfolio/' } },
+        { image: 'img/webimg.jpg', category: 'Conceptions', title: 'Electro bike' , contenu: { type: 'image', url: 'img/webimg.jpg' } },
+        { image: 'img/webimg.jpg', category: 'Montages', title: 'Larq', contenu: { type: 'video', url: 'img/webvideos.mp4' } },
+        { image: 'img/webimg.jpg', category: 'Développement Web', title: 'Zibbet', contenu: { type: 'lien', url: 'https://otinelio.github.io/OtinelioPortfolio/' } },
+        { image: 'img/webimg.jpg', category: 'Développement Web', title: 'Adobe Ai', contenu: { type: 'lien', url: 'https://otinelio.github.io/OtinelioPortfolio/' } },
+        { image: 'img/webimg.jpg', category: 'Conceptions', title: 'Goby' , contenu: { type: 'image', url: 'img/webimg.jpg' } },
+        { image: 'img/webimg.jpg', category: 'Conceptions', title: 'OK' , contenu: { type: 'image', url: 'img/webimg.jpg' } },
+        { image: 'img/webimg.jpg', category: 'Montages', title: 'Flaunter' , contenu: { type: 'video', url: 'img/webvideos.mp4' } },
+        { image: 'img/webimg.jpg', category: 'Montages', title: 'Inside weather' , contenu: { type: 'video', url: 'img/webvideos.mp4' } }
     ];
 
     const portfolioGrid = document.getElementById('portfolio-grid');
@@ -228,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="card-img-wrapper">
                         <img src="${item.image}" class="card-img-top" alt="${item.title}">
                         <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                            <a class="filter-btn rounded-pill text-white" style="transition: all 0.3s ease;" >Voir le projet</a>
+                            <button class="filter-btn rounded-pill text-white voir-projet" style="transition: all 0.3s ease;" data-contenu='${JSON.stringify(item.contenu)}'>Voir le projet</button>
                         </div>
                     </div>
                     <div class="card-body">
@@ -246,7 +255,83 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelectorAll('.portfolio-item').forEach(item => {
                 item.classList.add('show');
             });
+            attachVoirProjetListeners();
         }, 100);
+    }
+
+    function attachVoirProjetListeners() {
+        document.querySelectorAll('.voir-projet').forEach(button => {
+            button.addEventListener('click', function() {
+                const contenu = JSON.parse(this.getAttribute('data-contenu'));
+                afficherContenu(contenu);
+            });
+        });
+    }
+
+    function afficherContenu(contenu) {
+        const navbar = document.querySelector('.navbar');
+        navbar.style.display = 'none';
+
+        const modal = document.createElement('div');
+        modal.style.position = 'fixed';
+        modal.style.top = '0';
+        modal.style.left = '0';
+        modal.style.width = '100%';
+        modal.style.height = '100%';
+        modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+        modal.style.display = 'flex';
+        modal.style.justifyContent = 'center';
+        modal.style.alignItems = 'center';
+        modal.style.zIndex = '1000';
+
+        let element;
+        switch(contenu.type) {
+            case 'image':
+                element = document.createElement('img');
+                element.src = contenu.url;
+                element.style.maxWidth = '90%';
+                element.style.maxHeight = '90%';
+                element.style.objectFit = 'contain';
+                break;
+            case 'video':
+                element = document.createElement('video');
+                element.src = contenu.url;
+                element.controls = true;
+                element.autoplay = true;
+                element.style.maxWidth = '90%';
+                element.style.maxHeight = '90%';
+                break;
+            case 'lien':
+                window.open(contenu.url, '_blank');
+                return;
+        }
+
+        const backButton = document.createElement('button');
+        backButton.innerHTML = '<i class="bi bi-arrow-left"></i>';
+        backButton.style.position = 'absolute';
+        backButton.style.top = '20px';
+        backButton.style.left = '20px';
+        backButton.style.backgroundColor = 'transparent';
+        backButton.style.border = 'none';
+        backButton.style.color = 'white';
+        backButton.style.fontSize = '24px';
+        backButton.style.cursor = 'pointer';
+
+        modal.appendChild(element);
+        modal.appendChild(backButton);
+        document.body.appendChild(modal);
+
+        function fermerModal() {
+            document.body.removeChild(modal);
+            navbar.style.display = '';
+        }
+
+        backButton.addEventListener('click', fermerModal);
+        modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                fermerModal();
+            }
+        });
     }
 
     function filterPortfolio(category) {
