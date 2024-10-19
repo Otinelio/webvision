@@ -5,6 +5,11 @@
     text-transform: none;
 }
 
+.nav-item.active {
+    color: #ffffff !important; /* Couleur pour le lien actif */
+    font-weight: bold;
+  }
+
 header nav {
     background-color: rgba(91, 151, 161, 0.5) !important;
     backdrop-filter: blur(10px);
@@ -187,9 +192,9 @@ section#apropos div.trait {
 }
 
 
-section#portfolio{
+/* section#portfolio{
     
-}
+} */
 
 section#portfolio h1 {
     background: linear-gradient(to left, #00aaff, #007bff);
@@ -295,8 +300,185 @@ section#portfolio .filter-btn:hover {
 
 section#portfolio .filter-btn.active {
     background-color: #007bff;
-    color: white;
+    color: rgb(81, 51, 51);
 }
 
 
+/* Nos services */
+
+section#nosServices h1 {
+    color: #0558b0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .word-animation {
+        height: 50px;
+        overflow: hidden;
+        span {
+            display: block;
+            animation: rotateSpin 7s infinite;
+            padding: 0px 0px 8px;
+        }
+    }
+}
+
+@keyframes rotateSpin {
+    16% {
+        -webkit-transform: translateY(-102%);
+        transform: translateY(-102%);
+    }
+    32% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    48% {
+        -webkit-transform: translateY(-202%);
+        transform: translateY(-202%);
+    }
+    64% {
+        -webkit-transform: translateY(-200%);
+        transform: translateY(-200%);
+    }
+    80% {
+        -webkit-transform: translateY(-302%);
+        transform: translateY(-302%);
+    }
+    100% {
+        -webkit-transform: translateY(-300%);
+        transform: translateY(-300%);
+    }
+}
+@media screen and (max-width: 768px) {
+    section#nosServices h1{
+        display:block;
+    }
+    section#nosServices h1 {
+        align-items: end;
+    }
+    section#nosServices .word-animation {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 576px) {
+
+    
+    section#nosServices .word-animation {
+        display: inline-block;
+        margin-top: 10px !important;
+    }
+    section#nosServices .word-animation span {
+        font-size: 25px;
+        padding-bottom: 20px !important;
+    }
+}
+
+section#nosServices div.trait {
+    width: 80px !important;
+    height: 3px !important;
+    background-color: #007bff;
+}
+
+section#nosServices div.box {
+    border-right: 2px dashed #007bff;
+}
+@media screen and (max-width: 768px) {
+    section#nosServices div.box {
+        border-right: none;
+    }
+}
+section#nosServices ul div {
+    border-bottom: 1px solid #007bff4d;
+    margin-left: -30px;
+    padding-right: 30px;
+}
+section#nosServices li {
+    font-size: 20px;
+}
+section#nosServices h4 {
+    font-size: 30px;
+    color: #007bff;
+}
+
+/* div.changing-text-container h1 {
+    color: #0558b0;
+} */
+
+
+
+
+
+
+
+
+/* Nous contacter */
+
+section#nousContacter h1 {
+    color: #0558b0;
+}
+
+section#nousContacter div.trait {
+    width: 80px !important;
+    height: 3px !important;
+    background-color: #007bff;
+}
+
+@media screen and (max-width: 991px) {
+    section#nousContacter div.imgdiv {
+        display: none;
+    }
+}
+
+
+footer {
+    background-color: rgba(91, 151, 161, 0.5);
+}
+
+footer a {
+    text-decoration: none !important;
+  }
+  @keyframes zoom-in-out {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply animation on hover */
+footer.social-icon:hover {
+    animation: zoom-in-out 0.6s ease-in-out;
+  }
+  /* Hover effect for links */
+footer.link {
+    position: relative;
+    text-decoration: none; /* Enlève le soulignement par défaut */
+    color: #6c757d; /* Couleur par défaut */
+    transition: color 0.3s ease; /* Transition pour la couleur */
+  }
+  
+footer.link:hover {
+    color: #007bff; /* Couleur lors du survol */
+  }
+  
+  /* Optionnel: Ajout d'une bordure ou d'un soulignement */
+footer.link:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px; /* Hauteur de la bordure */
+    background-color: #6a6b6c; /* Couleur de la bordure */
+    transition: width 0.3s ease; /* Transition pour la largeur */
+}
+@media (max-width: 576px) {
+    .footer-links .col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
 

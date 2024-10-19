@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,79 +9,91 @@
     <link rel="stylesheet" href="../bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 </head>
 <!-- 
 git add .
 git commit -m "Description de la mise à jour"
 git push 
 -->
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-lg">
             <div class="container">
                 <a class="navbar-brand fw-bold fs-3" href="#">WebVision</a>
                 <div class="d-flex align-items-center d-lg-none">
-                    <button class="btn btn-primary rounded-pill px-4 fs-6 me-2" style="font-weight: 500;">Nous contacter</button>
-                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="btn btn-primary rounded-pill px-4 fs-6 me-2" style="font-weight: 500;">Nous
+                        contacter</button>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0" style="font-size: 17px; font-weight: 500;">
                         <li class="nav-item me-3">
-                            <a class="nav-link" aria-current="page" href="#">Accueil</a>
+                            <a class="nav-link" aria-current="page" href="#section1">Accueil</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="oti nav-link" href="#">À propos</a>
+                            <a class="oti nav-link" href="#apropos">À propos</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#">Équipe</a>
+                            <a class="nav-link" href="#" id="">Équipe</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#">Portefeuille</a>
+                            <a class="nav-link" href="#portfolio">Portefeuille</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#">Nos services</a>
+                            <a class="nav-link" href="#nosServices">Nos services</a>
                         </li>
                     </ul>
-                    <button class="btn btn-primary rounded-pill px-4 fs-6 d-none d-lg-block" style="font-weight: 500;">Nous contacter</button>
+                    <a href="#nousContacter"class="text-decoration-none">
+                        <button class="btn btn-primary rounded-pill px-4 fs-6 d-none d-lg-block"
+                        style="font-weight: 500;">Nous contacter</button>
+                    </a>
                 </div>
             </div>
         </nav>
     </header>
 
     <main class="pt-0">
-        <section id="section1" class="container d-flex align-items-center justify-content-end flex-column mt-0 mb-5" style="height: 75vh;">
-            <h1 class="text-center col-12 fw-bold col-md-8 col-lg-7">Services web, montage créatif et design artistique.</h1>
-            <p class="col-12 col-lg-8 col-md-10 text-center">Nous vous accompagnons à chaque étape de votre projet digital, de l'idée à la concrétisation.</p>
+        <section id="section1" class="container d-flex align-items-center justify-content-end flex-column mt-0 mb-5"
+            style="height: 75vh;">
+            <h1 class="text-center col-12 fw-bold col-md-8 col-lg-7">Services web, montage créatif et design artistique.
+            </h1>
+            <p class="col-12 col-lg-8 col-md-10 text-center">Nous vous accompagnons à chaque étape de votre projet
+                digital, de l'idée à la concrétisation.</p>
             <button class="btn btn-primary px-4 mt-4 rounded-pill fs-5 ">En savoir plus</button>
         </section>
-        
-        <div class="container mt-5"  >
+
+        <div class="container mt-5">
             <div class="row d-flex justify-content-evenly gy-5 mt-1">
-              <div class="card p-3 col-12 col-md-10 col-lg-3">
-                <i class="bi bi-code-slash"></i><br />
-                <h1 style="color: rgb(0, 0, 0) ;">Web & Mobile</h1>
-                <p>
-                  Des solutions web et mobiles personnalisées pour booster votre
-                  entreprise.
-                </p>
-              </div>
-              <div class="card col-12 col-md-10 col-lg-3">
-                <i class="bi bi-camera-reels-fill"></i><br />
-                <h1>Montage vidéo</h1>
-                <p>
-                  Des solutions web et mobiles personnalisées pour booster votre
-                  entreprise.
-                </p>
-              </div>
-              <div class="card col-12 col-md-10 col-lg-3">
-                <i class="bi bi-palette-fill"></i><br />
-                <h1>Graphisme</h1>
-                <p>
-                    Création de visuels percutants pour vos projets, que ce soit pour des affiches, des bannières ou des logos.
-                </p>
-              </div>
+                <div class="card p-3 col-12 col-md-10 col-lg-3">
+                    <i class="bi bi-code-slash"></i><br />
+                    <h1 style="color: rgb(0, 0, 0) ;">Web & Mobile</h1>
+                    <p>
+                        Des solutions web et mobiles personnalisées pour booster votre
+                        entreprise.
+                    </p>
+                </div>
+                <div class="card col-12 col-md-10 col-lg-3">
+                    <i class="bi bi-camera-reels-fill"></i><br />
+                    <h1>Montage vidéo</h1>
+                    <p>
+                        Des solutions web et mobiles personnalisées pour booster votre
+                        entreprise.
+                    </p>
+                </div>
+                <div class="card col-12 col-md-10 col-lg-3">
+                    <i class="bi bi-palette-fill"></i><br />
+                    <h1>Graphisme</h1>
+                    <p>
+                        Création de visuels percutants pour vos projets, que ce soit pour des affiches, des bannières ou
+                        des logos.
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -95,143 +108,412 @@ git push
                     <h1 class="fw-bold ">Notre mission</h1>
                     <div class="trait mt-3 mb-3"></div>
                     <p class="fs-5" style="color: rgba(0, 0, 0, 0.776) !important;">
-                              Chez <span class=" fw-bold">WebVision</span>, notre mission est d'aider les entreprises à réaliser leur plein potentiel grâce à 
-                        des solutions digitales innovantes. Que ce soit par des <span class=" fw-bold">solutions web et mobiles sur mesure</span>, 
-                        un <span class=" fw-bold">montage vidéo créatif</span> qui capte l’attention ou un <span class=" fw-bold">graphisme percutant</span> qui forge une identité 
-                         visuelle unique, nous dynamisons votre marque à chaque étape.
+                        Chez <span class=" fw-bold">WebVision</span>, notre mission est d'aider les entreprises à
+                        réaliser leur plein potentiel grâce à
+                        des solutions digitales innovantes. Que ce soit par des <span class=" fw-bold">solutions web et
+                            mobiles sur mesure</span>,
+                        un <span class=" fw-bold">montage vidéo créatif</span> qui capte l’attention ou un <span
+                            class=" fw-bold">graphisme percutant</span> qui forge une identité
+                        visuelle unique, nous dynamisons votre marque à chaque étape.
                         <br> <br>
-                        Notre équipe d'<span class="fw-bold">experts passionnés</span> travaille main dans la main avec nos clients pour créer des 
-                        solutions personnalisées qui répondent à leurs besoins uniques. Nous croyons en une approche collaborative, 
+                        Notre équipe d'<span class="fw-bold">experts passionnés</span> travaille main dans la main avec
+                        nos clients pour créer des
+                        solutions personnalisées qui répondent à leurs besoins uniques. Nous croyons en une approche
+                        collaborative,
                         où chaque projet est une occasion de faire briller votre vision.
                     </p>
                 </div>
             </div>
         </section>
-        
 
+        <section id="portfolio" class="my-5 py-5">
+            <div class="container">
+                <h1 class="fw-bold">Nos Projets</h1>
+                <div class="trait mt-3 mb-3"></div>
+            </div>
 
-
-        <section id="portfolio" class="container my-5 py-5">
-            <h1 class="fw-bold ">Nos Projets</h1>
-            <div class="trait mt-3 mb-3"></div>
-            
-            <div class="filter-container mb-5">
+            <div class="filter-container container-fluid my-5">
                 <div class="filter-wrapper d-flex justify-content-center">
                     <button class="filter-btn active me-2 rounded-pill" data-filter="all">Tous</button>
-                    <button class="filter-btn me-2 rounded-pill" data-filter="Développement Web">Développement Web</button>
-                    <button class="filter-btn me-2 rounded-pill" data-image="img/webimg.jpg" data-filter="Conceptions">Conceptions</button>
-                    
-                    <button class="filter-btn me-2 rounded-pill"  data-filter="Montages">Montages</button>
+                    <button class="filter-btn me-2 rounded-pill" data-filter="Développement Web">Développement
+                        Web</button>
+                    <button class="filter-btn me-2 rounded-pill" data-image="img/webimg.jpg"
+                        data-filter="Conceptions">Conceptions</button>
+                    <button class="filter-btn me-2 rounded-pill" data-filter="Montages">Montages</button>
                 </div>
             </div>
-        
+
             <!-- Portfolio Grid -->
-            <div class="row" id="portfolio-grid">
-                <!-- Les éléments du portfolio seront générés dynamiquement ici -->
+            <div class="container">
+                <div class="row" id="portfolio-grid">
+                    <!-- Les éléments du portfolio seront générés dynamiquement ici -->
+                </div>
             </div>
-            
+
             <!-- Boutons "Voir plus" et "Voir moins" -->
             <div class="text-center mt-4">
-                <button id="loadMoreBtn" class="btn border-0 px-4 me-2" style="color: #007bff !important;">Voir plus...</button>
-                <button id="loadLessBtn" class="btn border-0 px-4" style="display: none;color: #007bff !important;">Voir moins...</button>
+                <button id="loadMoreBtn" class="btn border-0 px-4 me-2" style="color: #007bff !important;">Voir
+                    plus...</button>
+                <button id="loadLessBtn" class="btn border-0 px-4" style="display: none;color: #007bff !important;">Voir
+                    moins...</button>
             </div>
         </section>
-        
 
-        
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<img src="img/webvideos.mp4" alt="">
-<a href="img/webimg.jpg" target="_blank"></a>
-Au niveau du filtrage Portfolio, je veux que chaque porfolioitems ait un lien specifique pour que chaque portfolioitems ait un lien specifique lorsqu'on clique sur voir le projet
+        <section id="nosServices" class="container my-5 py-3">
+            <h1 class="fw-bold me-3 p-0 m-0">
+                Nos Services
+                <div class="word-animation">
+                    <span class="teal">Développement Web</span>
+                    <span class="red">Graphisme</span>
+                    <span class="orange">Montage Vidéo</span>
+                    <span class="teal">Développement Web</span>
+                </div>
+            </h1>
+            <div class="trait mt-3 mb-3"></div>
+
+            <div class="my-5 ms-3 row">
+                <div class="col-12 col-md-4 my-2 pt-2 box">
+                    <h4 class="mb-3">Design</h4>
+                    <div class="">
+                        <ul>
+                            <li>Création de Logo</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Bannière Web Annonces</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Web Design</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Conception UI/UX</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Illustration</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Marketing Collatéral</li>
+                            <div class="w-100 my-1"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 my-2 pt-2 box">
+                    <h4 class="mb-3">Développement</h4>
+                    <div class="">
+                        <ul>
+                            <li>Site</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Développement App</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Développement Logiciel</li>
+                            <div class="w-100 my-1"></div>
+                            <li>développement du Commerce Électronique</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Intégration CMS et API</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Thème Personnalisé</li>
+                            <div class="w-100 my-1"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 my-2 pt-2">
+                    <h4 class="mb-3">SEO /SEM</h4>
+                    <div class="">
+                        <ul>
+                            <li>Web Audits Technique</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Optimisations + On-Page SEO</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Link Building + Sensibilisation (Articles d'hôtes)</li>
+                            <div class="w-100 my-1"></div>
+                            <li>echerche de mots clés + Content Writers (Articles)</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Google Ads + Recherche payante Marketing</li>
+                            <div class="w-100 my-1"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 my-4 pt-2 box">
+                    <h4 class="mb-3">AI</h4>
+                    <div class="">
+                        <ul>
+                            <li>Intégration Intelligence Artificielle</li>
+                            <div class="w-100 my-1"></div>
+                            <li>AI Powered ChatBots</li>
+                            <div class="w-100 my-1"></div>
+                            <li>DALL-E 2 Intégration</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Une Ingénierie Prompte</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Sites Web pilotés par l'IA</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Génération d'IA Audio/Vidéo</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Générative AI</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Machine Learning</li>
+                            <div class="w-100 my-1"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 my-4 pt-2 box">
+                    <h4 class="mb-3">Application Mobile</h4>
+                    <div class="">
+                        <ul>
+                            <li>App UI/UX</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Développement backend et API</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Front-End Développement</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Optimisation App Store ASO</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Intégration de Payment Gateway</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Push Notifications et Messagerie</li>
+                            <div class="w-100 my-1"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 my-4 pt-2">
+                    <h4 class="mb-3">Montage vidéo</h4>
+                    <div>
+                        <ul>
+                            <li>Montage de vidéos publicitaires</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Montage de vidéos corporatives</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Montage de vidéos pour les médias sociaux</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Édition et correction de couleur</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Ajout d'effets spéciaux</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Création de titres et de graphiques animés</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Intégration de la musique et des effets sonores</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Retouche et restauration de vidéos</li>
+                            <div class="w-100 my-1"></div>
+                            <li>Création de contenu vidéo à 360°</li>
+                            <div class="w-100 my-1"></div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nousContacter" class="container my-5 py-3">
+            <h1 class="fw-bold ">Nous Contacter</h1>
+            <div class="trait mt-3 mb-3"></div>
+
+
+            <div class="container mt-5">
+                <div class="row d-flex justify-content-evenly gy-5 mt-1 mb-5 ">
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="card p-3 col-12">
+                            <i class="bi bi-envelope mb-0 pb-0"></i><br />
+                            <h1 style="color: rgb(0, 0, 0) ;">Email</h1>
+                            <a class="text-decoration-none" href="mailto:webvision229@gmail.com">
+                                <p class="fs-5 ">webvision229@gmail.com</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="card p-3 col-12">
+                            <i class="bi bi-telephone mb-0 pb-0"></i><br />
+                            <h1 style="color: rgb(0, 0, 0) ;">Téléphone</h1>
+                            <a class="text-decoration-none" href="tel:+22871616439">
+                                <p class="fs-5 ">+22871616439</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="card p-3 col-12">
+                            <i class="bi bi-whatsapp mb-0 pb-0"></i><br />
+                            <h1 style="color: rgb(0, 0, 0) ;">WhatsApp</h1>
+                            <a class="text-decoration-none" href="https://wa.me/22871616439" target="_blank">
+                                <p class="fs-5 ">wa.me/webvision</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-5 d-flex justify-content-bet align-items-center gy-5">
+                    <div class="col-12 col-lg-7 order-lg-1 order-2 ">
+
+                        <form>
+                            <div class="mb-3">
+                                <label for="nom" class="form-label">Nom</label>
+                                <input type="email" class="form-control py-3 shadow" id="nom" placeholder="Votre Nom">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Adresse Email</label>
+                                <input type="email" class="form-control py-3 shadow" id="email"
+                                    placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tel" class="form-label">Téléphone</label>
+                                <input type="tel" class="form-control py-3 shadow" id="tel"
+                                    placeholder="+00 0000 00 00 0">
+                            </div>
+                            <div class="mb-3">
+                                <label for="objet" class="form-label">Objet de votre demande</label>
+                                <select class="form-select py-3 shadow" aria-label="" for="objet">
+                                    <option value="1">Partenariat</option>
+                                    <option value="2">Recrutement</option>
+                                    <option value="3">Autre demande</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="objet" class="form-label">Message</label>
+                                <textarea class="form-control py-3 shadow" id="objet" rows="3"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary float-end rounded-pill px-4 mt-2"
+                                    type="submit">Envoyer</button>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="col-12 col-lg-5 border-5 order-lg-2 order-1 imgdiv">
+                        <img src="img/contact-us-1524408_1920.png" alt="" class="img-fluid w-100 h-100 border-success">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
-<script>
 
-document.addEventListener('DOMContentLoaded', function() {
-    const portfolioItems = [ 
-        { image: 'img/webimg.jpg', category: 'Développement Web', title: 'Canva Schedule', contenu: { type: 'lien', url: 'https://otinelio.github.io/OtinelioPortfolio/' } },
-        { image: 'img/webimg.jpg', category: 'Conceptions', title: 'Electro bike' , contenu: { type: 'image', url: 'img/webimg.jpg' } },
-        { image: 'img/webimg.jpg', category: 'Montages', title: 'Larq', contenu: { type: 'video', url: 'img/webvideos.mp4' } },
-        { image: 'img/webimg.jpg', category: 'Développement Web', title: 'Zibbet', contenu: { type: 'lien', url: 'https://otinelio.github.io/OtinelioPortfolio/' } },
-        { image: 'img/webimg.jpg', category: 'Développement Web', title: 'Adobe Ai', contenu: { type: 'lien', url: 'https://otinelio.github.io/OtinelioPortfolio/' } },
-        { image: 'img/webimg.jpg', category: 'Conceptions', title: 'Goby' , contenu: { type: 'image', url: 'img/webimg.jpg' } },
-        { image: 'img/webimg.jpg', category: 'Conceptions', title: 'OK' , contenu: { type: 'image', url: 'img/webimg.jpg' } },
-        { image: 'img/webimg.jpg', category: 'Montages', title: 'Flaunter' , contenu: { type: 'video', url: 'img/webvideos.mp4' } },
-        { image: 'img/webimg.jpg', category: 'Montages', title: 'Inside weather' , contenu: { type: 'video', url: 'img/webvideos.mp4' } }
-    ];
 
-    const portfolioGrid = document.getElementById('portfolio-grid');
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const loadMoreBtn = document.getElementById('loadMoreBtn');
-    const loadLessBtn = document.getElementById('loadLessBtn');
-    let currentCategory = 'all';
-    let visibleItems = 3; // Nombre d'éléments visibles initialement (3/4 de 8 arrondis à 6)
-    const initialVisibleItems = 3;
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex flex-column align-items-center p-4 border-bottom">
+          <div class="mb-3">
+            <span>Restez connecté avec nous sur les réseaux sociaux :</span>
+          </div>
+  
+          <div class="d-flex justify-content-center">
+            <!-- Facebook -->
+            <a
+              class="btn text-white btn-floating m-1 social-icon"
+              style="background-color: #3b5998"
+              href="#!"
+              role="button"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+  
+            <!-- Instagram -->
+            <a
+              class="btn text-white btn-floating m-1 social-icon"
+              style="background-color: #ac2bac"
+              href="#!"
+              role="button"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+  
+            <!-- LinkedIn -->
+            <a
+              class="btn text-white btn-floating m-1 social-icon"
+              style="background-color: #0082ca"
+              href="#!"
+              role="button"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </section>
+  
+        <!-- Section: Links -->
+        <section class="footer-links">
+          <div class="container text-center text-md-start mt-5">
+            <div class="row">
+              <!-- Première colonne -->
+              <div
+                class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4"
+              >
+                <div class="fw-bold mb-4 text-primary">
+                  <i class="fas fa-gem me-3 text-primary"></i>DigitalVision
+                </div>
+                <p>
+                  Accélérez votre innovation digitale. Une solution adaptée à
+                  chaque projet
+                </p>
+              </div>
+  
+              <!-- Deuxième colonne -->
+              <div
+                class="col-12 col-sm-6 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"
+              >
+                <div class="fw-bold mb-4 text-primary">L’AGENCE</div>
+                <p><a href="#!" class="text-reset link">Offres</a></p>
+                <p><a href="#!" class="text-reset link">Méthode</a></p>
+                <p><a href="#!" class="text-reset link">Réalisations</a></p>
+                <p><a href="#!" class="text-reset link">Cas clients</a></p>
+              </div>
+  
+              <!-- Troisième colonne -->
+              <div
+                class="col-12 col-sm-6 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4"
+              >
+                <div class="fw-bold mb-4 text-primary">Liens utiles</div>
+                <p><a href="#!" class="text-reset link">Tarifs</a></p>
+                <p><a href="#!" class="text-reset link">Paramètres</a></p>
+                <p><a href="#!" class="text-reset link">Commandes</a></p>
+                <p><a href="#!" class="text-reset link">Aide</a></p>
+              </div>
+  
+              <!-- Quatrième colonne -->
+              <div
+                class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"
+              >
+                <div class="fw-bold mb-4 text-primary">Contact</div>
+                <p><i class="fas fa-home me-3"></i> Lomé, Togo</p>
+                <p><i class="fas fa-envelope me-3"></i> info@exemple.com</p>
+                <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <!-- Copyright -->
+        <div
+          class="text-center p-4"
+          style="background-color: rgba(0, 0, 0, 0.05)"
+        >
+          © 2024 Copyright :
+          <a class="text-reset fw-bold" href="#">DIGITALVISION.com</a>
+        </div>
+    </footer>
+  
 
-    function createPortfolioItem(item) {
-        return `
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const portfolioItems = [
+                { image: 'img/webimg.jpg', category: 'Développement Web', title: 'Canva Schedule', contenu: { type: 'lien', url: 'https://otinelio.github.io/OtinelioPortfolio/' } },
+                { image: 'img/webimg.jpg', category: 'Conceptions', title: 'Electro bike', contenu: { type: 'image', url: 'img/webimg.jpg' } },
+                { image: 'img/webimg.jpg', category: 'Montages', title: 'Larq', contenu: { type: 'video', url: 'img/webvideos.mp4' } },
+                { image: 'img/webimg.jpg', category: 'Développement Web', title: 'Zibbet', contenu: { type: 'lien', url: 'https://otinelio.github.io/OtinelioPortfolio/' } },
+                { image: 'img/webimg.jpg', category: 'Développement Web', title: 'Adobe Ai', contenu: { type: 'lien', url: 'https://otinelio.github.io/OtinelioPortfolio/' } },
+                { image: 'img/webimg.jpg', category: 'Conceptions', title: 'Goby', contenu: { type: 'image', url: 'img/webimg.jpg' } },
+                { image: 'img/webimg.jpg', category: 'Conceptions', title: 'OK', contenu: { type: 'image', url: 'img/webimg.jpg' } },
+                { image: 'img/webimg.jpg', category: 'Montages', title: 'Flaunter', contenu: { type: 'video', url: 'img/webvideos.mp4' } },
+                { image: 'img/webimg.jpg', category: 'Montages', title: 'Inside weather', contenu: { type: 'video', url: 'img/webvideos.mp4' } }
+            ];
+
+            const portfolioGrid = document.getElementById('portfolio-grid');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            const loadLessBtn = document.getElementById('loadLessBtn');
+            let currentCategory = 'all';
+            let visibleItems = 3; // Nombre d'éléments visibles initialement (3/4 de 8 arrondis à 6)
+            const initialVisibleItems = 3;
+
+            function createPortfolioItem(item) {
+                return `
             <div class="col-md-4 mb-4 portfolio-item ${item.category}">
                 <div class="card h-100 portfolio-card">
                     <div class="card-img-wrapper">
@@ -247,158 +529,162 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             </div>
         `;
-    }
-
-    function renderPortfolioItems(items) {
-        portfolioGrid.innerHTML = items.map(createPortfolioItem).join('');
-        setTimeout(() => {
-            document.querySelectorAll('.portfolio-item').forEach(item => {
-                item.classList.add('show');
-            });
-            attachVoirProjetListeners();
-        }, 100);
-    }
-
-    function attachVoirProjetListeners() {
-        document.querySelectorAll('.voir-projet').forEach(button => {
-            button.addEventListener('click', function() {
-                const contenu = JSON.parse(this.getAttribute('data-contenu'));
-                afficherContenu(contenu);
-            });
-        });
-    }
-
-    function afficherContenu(contenu) {
-        const navbar = document.querySelector('.navbar');
-        navbar.style.display = 'none';
-
-        const modal = document.createElement('div');
-        modal.style.position = 'fixed';
-        modal.style.top = '0';
-        modal.style.left = '0';
-        modal.style.width = '100%';
-        modal.style.height = '100%';
-        modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
-        modal.style.display = 'flex';
-        modal.style.justifyContent = 'center';
-        modal.style.alignItems = 'center';
-        modal.style.zIndex = '1000';
-
-        let element;
-        switch(contenu.type) {
-            case 'image':
-                element = document.createElement('img');
-                element.src = contenu.url;
-                element.style.maxWidth = '90%';
-                element.style.maxHeight = '90%';
-                element.style.objectFit = 'contain';
-                break;
-            case 'video':
-                element = document.createElement('video');
-                element.src = contenu.url;
-                element.controls = true;
-                element.autoplay = true;
-                element.style.maxWidth = '90%';
-                element.style.maxHeight = '90%';
-                break;
-            case 'lien':
-                window.open(contenu.url, '_blank');
-                return;
-        }
-
-        const backButton = document.createElement('button');
-        backButton.innerHTML = '<i class="bi bi-arrow-left"></i>';
-        backButton.style.position = 'absolute';
-        backButton.style.top = '20px';
-        backButton.style.left = '20px';
-        backButton.style.backgroundColor = 'transparent';
-        backButton.style.border = 'none';
-        backButton.style.color = 'white';
-        backButton.style.fontSize = '24px';
-        backButton.style.cursor = 'pointer';
-
-        modal.appendChild(element);
-        modal.appendChild(backButton);
-        document.body.appendChild(modal);
-
-        function fermerModal() {
-            document.body.removeChild(modal);
-            navbar.style.display = '';
-        }
-
-        backButton.addEventListener('click', fermerModal);
-        modal.addEventListener('click', function(event) {
-            if (event.target === modal) {
-                fermerModal();
             }
+
+            function renderPortfolioItems(items) {
+                portfolioGrid.innerHTML = items.map(createPortfolioItem).join('');
+                setTimeout(() => {
+                    document.querySelectorAll('.portfolio-item').forEach(item => {
+                        item.classList.add('show');
+                    });
+                    attachVoirProjetListeners();
+                }, 100);
+            }
+
+            function attachVoirProjetListeners() {
+                document.querySelectorAll('.voir-projet').forEach(button => {
+                    button.addEventListener('click', function () {
+                        const contenu = JSON.parse(this.getAttribute('data-contenu'));
+                        afficherContenu(contenu);
+                    });
+                });
+            }
+
+            function afficherContenu(contenu) {
+                const navbar = document.querySelector('.navbar');
+                navbar.style.display = 'none';
+
+                const modal = document.createElement('div');
+                modal.style.position = 'fixed';
+                modal.style.top = '0';
+                modal.style.left = '0';
+                modal.style.width = '100%';
+                modal.style.height = '100%';
+                modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+                modal.style.display = 'flex';
+                modal.style.justifyContent = 'center';
+                modal.style.alignItems = 'center';
+                modal.style.zIndex = '1000';
+
+                let element;
+                switch (contenu.type) {
+                    case 'image':
+                        element = document.createElement('img');
+                        element.src = contenu.url;
+                        element.style.maxWidth = '90%';
+                        element.style.maxHeight = '90%';
+                        element.style.objectFit = 'contain';
+                        break;
+                    case 'video':
+                        element = document.createElement('video');
+                        element.src = contenu.url;
+                        element.controls = true;
+                        element.autoplay = true;
+                        element.style.maxWidth = '90%';
+                        element.style.maxHeight = '90%';
+                        break;
+                    case 'lien':
+                        window.open(contenu.url, '_blank');
+                        return;
+                }
+
+                const backButton = document.createElement('button');
+                backButton.innerHTML = '<i class="bi bi-arrow-left"></i>';
+                backButton.style.position = 'absolute';
+                backButton.style.top = '20px';
+                backButton.style.left = '20px';
+                backButton.style.backgroundColor = 'transparent';
+                backButton.style.border = 'none';
+                backButton.style.color = 'white';
+                backButton.style.fontSize = '24px';
+                backButton.style.cursor = 'pointer';
+
+                modal.appendChild(element);
+                modal.appendChild(backButton);
+                document.body.appendChild(modal);
+
+                function fermerModal() {
+                    document.body.removeChild(modal);
+                    navbar.style.display = '';
+                }
+
+                backButton.addEventListener('click', fermerModal);
+                modal.addEventListener('click', function (event) {
+                    if (event.target === modal) {
+                        fermerModal();
+                    }
+                });
+            }
+
+            function filterPortfolio(category) {
+                currentCategory = category;
+                visibleItems = initialVisibleItems; // Réinitialiser le nombre d'éléments visibles
+                const filteredItems = category === 'all'
+                    ? portfolioItems
+                    : portfolioItems.filter(item => item.category === category);
+
+                document.querySelectorAll('.portfolio-item').forEach(item => {
+                    item.classList.remove('show');
+                });
+
+                setTimeout(() => {
+                    renderPortfolioItems(filteredItems.slice(0, visibleItems));
+                    updateLoadButtons(filteredItems);
+                }, 300);
+            }
+
+            function updateLoadButtons(items) {
+                if (items.length > visibleItems) {
+                    loadMoreBtn.style.display = 'inline-block';
+                    loadLessBtn.style.display = 'none';
+                } else if (visibleItems > initialVisibleItems) {
+                    loadMoreBtn.style.display = 'none';
+                    loadLessBtn.style.display = 'inline-block';
+                } else {
+                    loadMoreBtn.style.display = 'none';
+                    loadLessBtn.style.display = 'none';
+                }
+            }
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    filterPortfolio(this.getAttribute('data-filter'));
+                });
+            });
+
+            loadMoreBtn.addEventListener('click', function () {
+                const filteredItems = currentCategory === 'all'
+                    ? portfolioItems
+                    : portfolioItems.filter(item => item.category === currentCategory);
+
+                visibleItems += 6; // Augmenter le nombre d'éléments visibles
+                renderPortfolioItems(filteredItems.slice(0, visibleItems));
+                updateLoadButtons(filteredItems);
+            });
+
+            loadLessBtn.addEventListener('click', function () {
+                const filteredItems = currentCategory === 'all'
+                    ? portfolioItems
+                    : portfolioItems.filter(item => item.category === currentCategory);
+
+                visibleItems = Math.max(initialVisibleItems, visibleItems - 6); // Diminuer le nombre d'éléments visibles
+                renderPortfolioItems(filteredItems.slice(0, visibleItems));
+                updateLoadButtons(filteredItems);
+            });
+
+            // Initial render
+            filterPortfolio('all');
         });
-    }
 
-    function filterPortfolio(category) {
-        currentCategory = category;
-        visibleItems = initialVisibleItems; // Réinitialiser le nombre d'éléments visibles
-        const filteredItems = category === 'all'
-            ? portfolioItems
-            : portfolioItems.filter(item => item.category === category);
-        
-        document.querySelectorAll('.portfolio-item').forEach(item => {
-            item.classList.remove('show');
-        });
-        
-        setTimeout(() => {
-            renderPortfolioItems(filteredItems.slice(0, visibleItems));
-            updateLoadButtons(filteredItems);
-        }, 300);
-    }
 
-    function updateLoadButtons(items) {
-        if (items.length > visibleItems) {
-            loadMoreBtn.style.display = 'inline-block';
-            loadLessBtn.style.display = 'none';
-        } else if (visibleItems > initialVisibleItems) {
-            loadMoreBtn.style.display = 'none';
-            loadLessBtn.style.display = 'inline-block';
-        } else {
-            loadMoreBtn.style.display = 'none';
-            loadLessBtn.style.display = 'none';
-        }
-    }
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-            filterPortfolio(this.getAttribute('data-filter'));
-        });
-    });
-
-    loadMoreBtn.addEventListener('click', function() {
-        const filteredItems = currentCategory === 'all'
-            ? portfolioItems
-            : portfolioItems.filter(item => item.category === currentCategory);
-        
-        visibleItems += 6; // Augmenter le nombre d'éléments visibles
-        renderPortfolioItems(filteredItems.slice(0, visibleItems));
-        updateLoadButtons(filteredItems);
-    });
-
-    loadLessBtn.addEventListener('click', function() {
-        const filteredItems = currentCategory === 'all'
-            ? portfolioItems
-            : portfolioItems.filter(item => item.category === currentCategory);
-        
-        visibleItems = Math.max(initialVisibleItems, visibleItems - 6); // Diminuer le nombre d'éléments visibles
-        renderPortfolioItems(filteredItems.slice(0, visibleItems));
-        updateLoadButtons(filteredItems);
-    });
-
-    // Initial render
-    filterPortfolio('all');
-});
-</script>
+    </script>
 
     <script src="../bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+
 </body>
+
 </html>
